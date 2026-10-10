@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:latest
+    container_name: AuditLog
+    environment:
+      POSTGRES_USER: mirsaleh
+      POSTGRES_PASSWORD: abasovmirsaleh
+      POSTGRES_DB: auditlog
+    ports:
+      - "4321:5432"
+
+
+
